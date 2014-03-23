@@ -1,0 +1,18 @@
+$full-width: 603px;
+$main-width: 421px + 32px;
+
+.content {
+	width: $full-width - 2*$b - 2*$m;
+	border: $b solid $border-color;
+	border-radius: $border-radius;
+	background-color: $background-color;
+	float: left;
+	margin: $m 0 0 $m;
+	color: white;
+	padding: $m - $b;
+
+	&.main {
+		width: $main-width - 2*$b - 2*$m;
+		border-top-right-radius: 0;
+	}
+}

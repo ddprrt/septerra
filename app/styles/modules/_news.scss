@@ -1,0 +1,51 @@
+.news {
+	time.news__time {
+		text-align: center;
+		display: block;
+		font-family: "Verdana";
+		font-weight: bold;
+		border: 1px solid rgb(128, 128, 128);
+	}
+	h1 {
+		font-size: 16px;
+		margin: 0;
+		margin-top: 16px;
+		color: $link-color;
+		font-family: "Plover", "Comic Sans MS";
+		font-weight: normal;
+		display: inline-block;
+	}
+
+	time,
+	address {
+		display: inline-block;
+		color: $link-color;
+		font-family: "Times New Roman";
+		font-style: normal;
+	}
+
+	p.center {
+		text-align: center;
+	}
+
+	.back-to-top {
+		margin-top: -$m + 4px;
+		display: block;
+
+		&:before {
+			content: '[';
+		}
+		&:after {
+			content: ']';
+		}
+		&:before,
+		&:after {
+			color: white;
+			text-decoration: none;
+		}
+	}
+
+	+ .news {
+		margin-top: $m*2;
+	}
+}

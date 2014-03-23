@@ -23,17 +23,24 @@
 	<script src="bower_components/modernizr/modernizr.js"></script>
 	<!-- endbuild -->
 </head>
-<body>
+<body id="top">
 
 	{{>banner}}
 
 	<div class="container">
 		{{>title}}
 		{{>nav}}
-		{{body}}
+		{{#if main}}
+		<div class="content main">
+		{{else}}
+		<div class="content">
+		{{/if}}
+			{{body}}
+		</div>
+		{{#if main}}
+		{{>sidebar}}
+		{{/if}}
 	</div>
-
-
 
 	{{>scripts}}
 

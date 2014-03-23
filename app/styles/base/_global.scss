@@ -1,3 +1,17 @@
 html {
 	background: url("../images/back.jpg");
 }
+
+body {
+	font-size: 13px;
+	font-family: "Arial", sans-serif;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

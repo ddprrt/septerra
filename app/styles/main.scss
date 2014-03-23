@@ -1,8 +1,9 @@
 // BASE
 
 @import "../bower_components/normalize-scss/normalize";
-@import "base/global";
 @import "base/variables";
+@import "base/global";
+@import "base/fonts";
 
 // LAYOUT
 
@@ -13,5 +14,8 @@
 @import "modules/banner";
 @import "modules/title";
 @import "modules/nav";
+@import "modules/content";
+@import "modules/sidebar";
+@import "modules/news";
 
 // STATES
