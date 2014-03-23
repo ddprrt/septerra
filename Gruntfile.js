@@ -131,7 +131,8 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'compressed'
+                    style: 'compressed',
+                    debugInfo: false
                 },
                 files: [{
                     expand: true,
@@ -279,7 +280,7 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
-                'sass',
+                'sass:dist',
                 'copy',
                 'htmlmin'
             ]
