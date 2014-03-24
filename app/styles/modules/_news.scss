@@ -4,8 +4,20 @@
 		display: block;
 		font-family: "Verdana";
 		font-weight: bold;
-		border: 1px solid rgb(128, 128, 128);
+		border: 1px outset rgb(128, 128, 128);
+		border-spacing: 2px;
 		color: white;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			border: 1px inset #808080;
+			border-spacing: 2px;
+		}
 	}
 	h1 {
 		font-size: 16px;
