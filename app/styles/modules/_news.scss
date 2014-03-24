@@ -7,6 +7,7 @@
 		border: 1px outset rgb(128, 128, 128);
 		border-spacing: 2px;
 		color: white;
+		position: relative;
 		
 		&:after {
 			content: '';
